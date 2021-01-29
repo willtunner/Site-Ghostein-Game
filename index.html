@@ -14,13 +14,75 @@
 		<script src="Build/UnityLoader.js"></script>
 		<script>
 			var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Ghostein_Web.json", {onProgress: UnityProgress});
+
+			// Função de enviar email
+			function sendMail() {
+				var link = "mailto:williampereira21@gmail.com"
+						//+ "?cc=myCCaddress@example.com"
+						+ "&subject=" + encodeURIComponent("This is my subject")
+						+ "&body=" + encodeURIComponent(document.getElementById('message').value)
+				;
+				
+				window.location.href = link;
+			}
 		</script>
+		
+		<style>
+			#menu1 {
+				    position: absolute;
+					margin-top: 23px;
+					margin-left: 203px;
+					font-size: 25px;
+					color: darkgrey;
+			}
+			
+			#menu2 {
+				    position: absolute;
+					margin-top: 23px;
+					margin-left: 390px;
+					font-size: 25px;
+					color: darkgrey;
+			}
+			
+			#menu3 {
+				    position: absolute;
+					margin-top: 23px;
+					margin-left: 875px;
+					font-size: 25px;
+					color: darkgrey;
+			}
+			
+			#menu4 {
+				    position: absolute;
+					margin-top: 23px;
+					margin-left: 1055px;
+					font-size: 25px;
+					color: darkgrey;
+			}
+		</style>
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header">
-				<div class="logo"><a href="index.html">Ghostein <span>Steam - PS4 - XBOX - Switch</span></a></div>
+				<div class="logo">
+					<div id="menu1">
+						Start
+					</div>
+					
+					<div id="menu2">
+						History
+					</div>
+					
+					<div id="menu3">
+						About 
+					</div>
+					
+					<div id="menu4">
+						Credits
+					</div>
+					<img src="images/menuTop.png" alt="narrative" style="width:100%; height:110px;">
+				</div>
 				<a href="#menu"><span>Menu</span></a>
 			</header>
 
@@ -120,7 +182,7 @@
 							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
 						</div>
 						<ul class="actions">
-							<li><input value="Send Message" class="button alt" type="submit"></li>
+							<li><input value="Send Message" onclick="sendMail(); return false" class="button alt" type="submit"></li>
 						</ul>
 					</form>
 
@@ -131,7 +193,7 @@
 					</ul>
 
 					<div class="copyright">
-						&copy; Untitled. Design: <a href="http://www.greencodebr.com.br/">GreenCodeBr</a>f.
+						&copy; All rights reserved to Parampara. Site desenvolved by: <a href="http://www.greencodebr.com.br/">GreenCodeBr</a>.
 					</div>
 
 				</div>
