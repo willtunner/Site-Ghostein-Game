@@ -1,15 +1,20 @@
 <!DOCTYPE HTML>
-<!--
-	Road Trip by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 	<head>
 		<title>Ghostein</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- todo Abaixo para player do game -->
+		<link rel="shortcut icon" href="TemplateData/favicon.ico">
+		<link rel="stylesheet" href="TemplateData/style.css">
+		<script src="TemplateData/UnityProgress.js"></script>
+		<script src="Build/UnityLoader.js"></script>
+		<script>
+			var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Ghostein_Web.json", {onProgress: UnityProgress});
+		</script>
 	</head>
 	<body>
 
@@ -30,12 +35,7 @@
 			</nav>
 
 		<!-- Banner -->
-		<!--
-			Note: To show a background image, set the "data-bg" attribute below
-			to the full filename of your image. This is used in each section to set
-			the background image.
-		-->
-			<section id="banner" class="bg-img" data-bg="banner.jpg">
+				<section id="banner" class="bg-img" data-bg="banner.jpg">
 				<div class="inner">
 					<header>
 						<div style="display: flex; align-items: center; width: 150%;">
@@ -50,66 +50,33 @@
 		<!-- One -->
 			<section id="one" class="wrapper post bg-img" data-bg="banner2.jpg">
 				<div class="inner" style="margin-left: 500px;">
-					
-						<!--	<header>
-							<h2>Nibh non lobortis mus nibh</h2>
-							<p>01.01.2017</p>
-						</header>
-						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
-						</div>
-						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
-						</footer> -->
-												
-						<img src="images/louro-bast-narrative.png" alt="narrative" style="width=500; height=500; margin-bottom=30">
+							<img src="images/louro-bast-narrative.png" alt="narrative" style="width:500; height:500; margin-bottom:30">
 						<p>Ghostein tells the story of a boy, who receive help by a ghost to scape a concentration camp in the middle of the second world war.</p>
-
-					
 				</div>
 				<a href="#three" class="more">Learn More</a>
 			</section>
-
-		<!-- Two -->
-			<!--	<section id="two" class="wrapper post bg-img" data-bg="banner5.jpg">
-				<div class="inner">
-					<article class="box">
-						<header>
-							<h2>Mus elit a ultricies at</h2>
-							<p>12.21.2016</p>
-						</header>
-						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
-						</div>
-						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
-						</footer>
-					</article>
-				</div>
-				<a href="#three" class="more">Learn More</a>
-			</section> -->
 
 		<!-- Three -->
 			<section id="three" class="wrapper post bg-img" data-bg="banner4.jpg">
 				<div class="inner">
 					<div class="sidebyside">
-						<img src="images/cranio.png" alt="narrative" style="width=100; height=100;">
+						<img src="images/cranio.png" alt="narrative" style="width:100; height:100;">
 						<p>Innovative gameplay</p>
 					</div>
 					<div style="display: flex;">
-						<img src="images/cranio.png" alt="narrative" style="width=100; height=100;">
+						<img src="images/cranio.png" alt="narrative" style="width:100; height:100;">
 						<p>Immersive narrative</p>
 					</div>
 					<div style="display: flex;">
-						<img src="images/cranio.png" alt="narrative" style="width=100; height=100;">
+						<img src="images/cranio.png" alt="narrative" style="width:100; height:100;">
 						<p>Cinematic sound</p>
 					</div>
 					<div style="display: flex;">
-						<img src="images/cranio.png" alt="narrative" style="width=100; height=100;">
+						<img src="images/cranio.png" alt="narrative" style="width:100; height:100;">
 						<p>Retro game style</p>
 					</div>
 					<div style="display: flex;">
-						<img src="images/cranio.png" alt="narrative" style="width=100; height=100;">
+						<img src="images/cranio.png" alt="narrative" style="width:100; height:100;">
 						<p>Stealth game</p>
 					</div>
 				</div>
@@ -120,16 +87,14 @@
 			<section id="four" class="wrapper post bg-img" data-bg="banner6.jpg">
 				<div class="inner">
 					<article class="box">
-						<header>
-							<h2>Luctus blandit mi lectus in nascetur</h2>
-							<p>10.30.2016</p>
-						</header>
-						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
-						</div>
-						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
-						</footer>
+						<div class="webgl-content">
+							<div id="unityContainer" style="width: 960px; height: 600px"></div>
+							<div class="footer">
+							  <div class="webgl-logo"></div>
+							  <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+							  <div class="title">Ghostein</div>
+							</div>
+						  </div>
 					</article>
 				</div>
 			</section>
